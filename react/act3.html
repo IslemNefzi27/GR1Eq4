@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Activité 3 - Introduction à JSX</title>
+  
+  <!-- Les bibliothèques React et Babel -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const apprenant = {
+      nomApprenant: 'Foulen',
+      prenomApprenant: 'Ben Foulen'
+    };
+
+    class Etudiant extends React.Component {
+        render() {
+            return (
+                <div>
+                    <strong>Bonne découverte de React</strong>
+                    <p>Apprenant : {apprenant.prenomApprenant} {apprenant.nomApprenant}</p>
+                </div>
+            ); 
+        }
+    }
+
+    ReactDOM.render(<Etudiant />, document.getElementById('root'));
+  </script>
+
+</body>
+</html>

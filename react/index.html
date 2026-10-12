@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Activité React</title>
+  
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+
+  <div id="monapplication"></div>
+
+  <script type="text/babel">
+    const msg = <strong>Bienvenue à tous</strong>;
+
+    ReactDOM.render(
+      msg,
+      document.getElementById('monapplication')
+    );
+  </script>
+
+</body>
+</html>
